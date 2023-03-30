@@ -17,6 +17,7 @@ namespace Calculator{
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Multiplicação");
             Console.WriteLine("4 - Divisão");
+            Console.WriteLine("5 - Sair");
 
             int menu = Convert.ToInt32(Console.ReadLine());
 
@@ -32,6 +33,9 @@ namespace Calculator{
                 break;
                 case 4: 
                 Console.WriteLine($"Resultado da divisão: {Divisao(primeiroValor, segundoValor)}");
+                break;
+                case 5: 
+                System.Environment.Exit(0);
                 break;
                 default:
                 Console.WriteLine("Opção inválida! ");
